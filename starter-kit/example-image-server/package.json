@@ -1,0 +1,17 @@
+{
+  "name": "images",
+  "version": "1.0.0",
+  "private": true,
+  "main": "server.js",
+  "engines": {
+    "node": ">=14.x"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jdenticon": "^3.1.0"
+  }
+}

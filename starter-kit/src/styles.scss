@@ -1,0 +1,126 @@
+$primary-color: #ffeb00;
+$secondary-color: #dd2a30;
+$shadow: black;
+
+html, body {
+  min-height: 100%;
+  margin: 0px;
+}
+
+h1 {
+  color: $primary-color;
+  text-transform: uppercase;
+  text-shadow: -1px 0 $shadow, -1px 0 $shadow, 0 1px $shadow, 1px 0 $shadow,
+    0 -1px $shadow, 1px 0px 0px $shadow, 2px 1px 0px $shadow,
+    3px 2px 0px $shadow, 4px 3px 0px $shadow, 5px 4px 0px $shadow;
+  letter-spacing: 3px;
+  border-bottom: 5px solid $secondary-color;
+  margin: 0;
+}
+
+//The width is set to 100vh to ensure that all cards are visible at once in fullscreen
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 5vh 10px 10px 10px;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100vh;
+}
+
+.grid-container.disable {
+  pointer-events: none;
+}
+
+.grid-item {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 30px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  aspect-ratio: 1;
+}
+
+.grid-item.open {
+	background: rgba(255, 255, 255, 0.6);
+	cursor: default;
+  pointer-events: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.grid-item.match {
+	cursor: default;
+  pointer-events: none;
+	background: rgb(159, 197, 159);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.grid-item.noMatch {
+	background: #d88197;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#celebration {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  //display: flex;
+}
+
+.party {
+  width: 500px;
+  height: 400px;
+  background-image: url(https://i.pinimg.com/originals/9b/96/79/9b96799d061a0528da6b0da7bac5374a.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button {
+  background-color: pink;
+  border-radius: 30px;
+  height: 50px;
+  border-color:rebeccapurple;
+  cursor: pointer;
+}
+
+.text-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#progress {
+  text-align: center;
+  border-radius: 30px;
+  padding: 10px;
+  background-color:#a3d6e0;
+}
+
+@media (max-width: 800px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    width: 90vw;
+  }
+  .party{
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+  }
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>The Schmemory Game</title>
+    <link rel="icon" type="image/png" href="https://i.pinimg.com/originals/82/8a/15/828a159fb6b44e8fee62c2410b315b53.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <div>
+      <!-- The div that is shown when a user finishes the game -->
+      <div id="celebration">
+        <div class="party">
+          <button class="button" onClick="window.location.reload();">Play Again</button>
+          <p>You made <b id="moves"></b> moves</p>
+        </div>
+      </div>
+      <!-- The grid-container that encapsules the grid-items that are the cards -->
+      <div class="grid-container" id="deck"></div>
+      <div class="text-container"><h1 id="progress"></h1></div>
+    </div>
+  </body>
+</html>

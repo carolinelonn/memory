@@ -1,0 +1,5 @@
+There are many improvents I would like to do with the game the main ones are:
+- Dynamic number of pairs: The code is prepared to take in a variable for pairs the user would like to play. So I had a thought to either add three differet levels to make it easier to control the layout and to have a scoreboard. But it could also be fun to just let the user write any number of pairs.
+- Dynamic and responsive design: I would like to make the design more dynamic to adapt the number of columns/rows in the grid to be able to handle any number of pairs while still keeping the whole deck in the view for all device sizes.
+- Save score locally: I would like to save the score locally in the browser and create a local scoreboard.
+- Make sure the card background always is visible: When the request to the image-server takes too long a bug occurs. The open card is just white until the image is loaded.
